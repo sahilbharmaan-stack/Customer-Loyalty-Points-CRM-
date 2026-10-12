@@ -1,0 +1,322 @@
+:root {
+  color-scheme: light;
+  background: #f5f6fb;
+}
+
+body {
+  background: linear-gradient(135deg, #f7f8fc 0%, #f2f3fa 100%);
+}
+
+.app-shell,
+.sidebar,
+.topbar,
+.panel,
+.metric-card,
+.reward-card,
+.add-reward-card,
+.modal-card {
+  transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease, box-shadow 220ms ease;
+}
+
+.metric-card,
+.panel {
+  box-shadow: 0 3px 12px #27244b08;
+}
+
+.metric-card:hover,
+.reward-card:hover,
+.add-reward-card:hover {
+  box-shadow: 0 12px 28px #27244b12;
+}
+
+.theme-toggle {
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(-8deg);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  background: #0b1020;
+  --ink: #edf0fa;
+  --muted: #9ba6bc;
+  --line: #273047;
+  --surface: #141b2a;
+}
+
+:root[data-theme="dark"] body {
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 78% -15%, #26204b80 0, transparent 42%),
+    linear-gradient(135deg, #0b1020 0%, #101728 58%, #111526 100%);
+}
+
+:root[data-theme="dark"] .app-shell,
+:root[data-theme="dark"] .main-area {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .sidebar,
+:root[data-theme="dark"] .topbar {
+  background: #111827;
+  border-color: #273047;
+}
+
+:root[data-theme="dark"] .brand,
+:root[data-theme="dark"] .workspace-copy strong,
+:root[data-theme="dark"] .profile-copy strong,
+:root[data-theme="dark"] .breadcrumb strong,
+:root[data-theme="dark"] .welcome-row h1,
+:root[data-theme="dark"] .metric-value,
+:root[data-theme="dark"] .panel-heading h2,
+:root[data-theme="dark"] .directory-toolbar h2,
+:root[data-theme="dark"] .chart-total strong,
+:root[data-theme="dark"] .tier-legend strong,
+:root[data-theme="dark"] .customer-cell strong,
+:root[data-theme="dark"] .activity-copy strong,
+:root[data-theme="dark"] .reward-card h2,
+:root[data-theme="dark"] .reward-bottom strong,
+:root[data-theme="dark"] .modal-head h2 {
+  color: #edf0fa;
+}
+
+:root[data-theme="dark"] .brand-light,
+:root[data-theme="dark"] .workspace-copy span,
+:root[data-theme="dark"] .profile-copy span,
+:root[data-theme="dark"] .workspace-switch > svg,
+:root[data-theme="dark"] .nav-label,
+:root[data-theme="dark"] .nav-item,
+:root[data-theme="dark"] .nav-item svg,
+:root[data-theme="dark"] .page-subtitle,
+:root[data-theme="dark"] .panel-heading p,
+:root[data-theme="dark"] .directory-toolbar p,
+:root[data-theme="dark"] .chart-legend,
+:root[data-theme="dark"] .chart-total span,
+:root[data-theme="dark"] .tier-legend-name,
+:root[data-theme="dark"] .customer-cell span,
+:root[data-theme="dark"] .customer-table td,
+:root[data-theme="dark"] .activity-copy > span,
+:root[data-theme="dark"] .activity-copy small,
+:root[data-theme="dark"] .page-footer,
+:root[data-theme="dark"] .modal-head p,
+:root[data-theme="dark"] .modal-kicker {
+  color: #9ba6bc;
+}
+
+:root[data-theme="dark"] .workspace-switch,
+:root[data-theme="dark"] .metric-card,
+:root[data-theme="dark"] .panel,
+:root[data-theme="dark"] .reward-card,
+:root[data-theme="dark"] .add-reward-card,
+:root[data-theme="dark"] .modal-card {
+  background: #141b2a;
+  border-color: #293349;
+  box-shadow: 0 8px 24px #05091540;
+}
+
+:root[data-theme="dark"] .nav-item:hover,
+:root[data-theme="dark"] .icon-btn:hover {
+  background: #20283b;
+  color: #c5baff;
+}
+
+:root[data-theme="dark"] .nav-item.active {
+  background: #30295a;
+  color: #c3b8ff;
+}
+
+:root[data-theme="dark"] .nav-item.active svg {
+  color: #c3b8ff;
+}
+
+:root[data-theme="dark"] .nav-count,
+:root[data-theme="dark"] .btn-secondary,
+:root[data-theme="dark"] .select-control,
+:root[data-theme="dark"] .search-box,
+:root[data-theme="dark"] .search-box input,
+:root[data-theme="dark"] .modal-card input,
+:root[data-theme="dark"] .modal-card select {
+  color: #dce2f1;
+  background: #101727;
+  border-color: #303a50;
+}
+
+:root[data-theme="dark"] .btn-secondary:hover,
+:root[data-theme="dark"] .search-box button:hover,
+:root[data-theme="dark"] .row-more:hover,
+:root[data-theme="dark"] .more-btn:hover {
+  background: #222b40;
+}
+
+:root[data-theme="dark"] .insight-banner {
+  background: linear-gradient(110deg, #241f43, #191d31 75%);
+  border-color: #39315f;
+}
+
+:root[data-theme="dark"] .insight-copy strong {
+  color: #e1dcff;
+}
+
+:root[data-theme="dark"] .insight-copy span,
+:root[data-theme="dark"] .banner-dismiss {
+  color: #aaa4c9;
+}
+
+:root[data-theme="dark"] .plan-card {
+  background: linear-gradient(140deg, #201d38, #171d2d);
+  border-color: #35304e;
+}
+
+:root[data-theme="dark"] .plan-card span {
+  color: #a9a5c2;
+}
+
+:root[data-theme="dark"] .plan-progress {
+  background: #34304a;
+}
+
+:root[data-theme="dark"] .customer-table th {
+  background: #111827;
+  border-color: #293349;
+  color: #9ba6bc;
+}
+
+:root[data-theme="dark"] .customer-table td,
+:root[data-theme="dark"] .chart-foot,
+:root[data-theme="dark"] .activity-item,
+:root[data-theme="dark"] .tier-legend > div,
+:root[data-theme="dark"] .page-footer {
+  border-color: #293349;
+}
+
+:root[data-theme="dark"] .customer-table tbody tr:hover {
+  background: #192235;
+}
+
+:root[data-theme="dark"] .customer-table input[type="checkbox"] {
+  accent-color: #8a78f2;
+}
+
+:root[data-theme="dark"] .tier-pill.platinum {
+  color: #c4b8ff;
+  background: #302954;
+}
+
+:root[data-theme="dark"] .tier-pill.gold {
+  color: #f0ca7e;
+  background: #39301f;
+}
+
+:root[data-theme="dark"] .tier-pill.silver {
+  color: #c3cddd;
+  background: #293244;
+}
+
+:root[data-theme="dark"] .tier-pill.bronze {
+  color: #e9ad8d;
+  background: #3b2a26;
+}
+
+:root[data-theme="dark"] .status-pill {
+  color: #80d7b2;
+  background: #17372f;
+}
+
+:root[data-theme="dark"] .activity-icon {
+  background: #242c42;
+}
+
+:root[data-theme="dark"] .activity-earn {
+  color: #a79aff;
+}
+
+:root[data-theme="dark"] .activity-redeem {
+  color: #70d0bd;
+}
+
+:root[data-theme="dark"] .reward-card p,
+:root[data-theme="dark"] .reward-category,
+:root[data-theme="dark"] .reward-bottom span,
+:root[data-theme="dark"] .add-reward-card small {
+  color: #a0abc0;
+}
+
+:root[data-theme="dark"] .reward-1 {
+  background: linear-gradient(145deg, #1b2036, #171b2b);
+}
+
+:root[data-theme="dark"] .reward-2 {
+  background: linear-gradient(145deg, #29251f, #1c1b26);
+}
+
+:root[data-theme="dark"] .reward-3 {
+  background: linear-gradient(145deg, #182a2b, #171d2b);
+}
+
+:root[data-theme="dark"] .reward-0 {
+  background: linear-gradient(145deg, #292036, #1b1b2d);
+}
+
+:root[data-theme="dark"] .add-reward-card {
+  border-style: dashed;
+}
+
+:root[data-theme="dark"] .add-reward-card > span,
+:root[data-theme="dark"] .reward-icon {
+  background: #292544;
+  color: #b6aaff;
+}
+
+:root[data-theme="dark"] .search-box input::placeholder,
+:root[data-theme="dark"] .modal-card input::placeholder {
+  color: #758099;
+}
+
+:root[data-theme="dark"] .modal-backdrop {
+  background: #050815b8;
+  backdrop-filter: blur(7px);
+}
+
+:root[data-theme="dark"] .modal-card input:focus,
+:root[data-theme="dark"] .modal-card select:focus {
+  border-color: #8a78f2;
+  box-shadow: 0 0 0 3px #8a78f233;
+}
+
+:root[data-theme="dark"] .top-divider {
+  background: #30394e;
+}
+
+:root[data-theme="dark"] .crumb-slash {
+  color: #59647a;
+}
+
+:root[data-theme="dark"] .recharts-cartesian-axis-tick-value {
+  fill: #9ba6bc !important;
+}
+
+:root[data-theme="dark"] .recharts-cartesian-grid-horizontal line {
+  stroke: #293349 !important;
+}
+
+:root[data-theme="dark"] .recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: #141b2a !important;
+  border-color: #303a50 !important;
+  color: #edf0fa;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-shell,
+  .sidebar,
+  .topbar,
+  .panel,
+  .metric-card,
+  .reward-card,
+  .add-reward-card,
+  .modal-card,
+  .theme-toggle {
+    transition: none;
+  }
+}
