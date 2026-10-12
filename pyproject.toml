@@ -1,0 +1,5 @@
+[tool.vercel]
+entrypoint = "backend.app.main:app"
+
+[tool.vercel.scripts]
+build = "npm ci --prefix frontend && npm --prefix frontend run build"

@@ -10,7 +10,7 @@ import {
   PieChart, Pie, Cell
 } from 'recharts';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
+const API = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://127.0.0.1:8000/api' : '/api');
 const demoCustomers = [
   {id:1,name:'Aarav Mehta',email:'aarav.mehta@example.com',phone:'+91 98765 01001',tier:'Platinum',status:'Active',points_balance:12480,lifetime_points:18900},
   {id:2,name:'Priya Sharma',email:'priya.sharma@example.com',phone:'+91 98765 01002',tier:'Gold',status:'Active',points_balance:8250,lifetime_points:12100},

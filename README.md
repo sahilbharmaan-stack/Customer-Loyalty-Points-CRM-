@@ -50,6 +50,18 @@ Create `frontend/.env` if needed:
 VITE_API_URL=http://127.0.0.1:8000/api
 ```
 
+## Deploy to Vercel
+
+Import this GitHub repository into Vercel and use the repository root as the
+project root. The root `pyproject.toml` configures Vercel to build the React
+frontend and serve it alongside the FastAPI API. No `VITE_API_URL` setting is
+needed for the combined deployment.
+
+The default SQLite database is stored under `/tmp` on Vercel. Vercel function
+storage is temporary and instance-local, so customer or transaction changes
+will not be durable or consistently shared between requests. Use a managed
+database and set `DATABASE_URL` before using this deployment with real data.
+
 ## Test APIs
 ```bash
 cd backend

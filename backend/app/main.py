@@ -1,4 +1,5 @@
 from contextlib import asynccontextmanager
+from pathlib import Path
 from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
@@ -128,3 +129,5 @@ def create_transaction(payload: schemas.TransactionCreate, db: Session = Depends
 @app.get("/api/rewards", response_model=list[schemas.RewardOut])
 def list_rewards(db: Session = Depends(get_db)):
     return db.query(models.Reward).order_by(models.Reward.points_cost).all()
+
+app.frontend("/", directory=str(Path(__file__).resolve().parents[2] / "frontend" / "dist"))
