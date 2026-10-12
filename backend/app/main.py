@@ -130,4 +130,4 @@ def create_transaction(payload: schemas.TransactionCreate, db: Session = Depends
 def list_rewards(db: Session = Depends(get_db)):
     return db.query(models.Reward).order_by(models.Reward.points_cost).all()
 
-app.frontend("/", directory=str(Path(__file__).resolve().parents[2] / "frontend" / "dist"))
+app.frontend("/", directory=str(Path(__file__).resolve().parents[2] / "dist"))
